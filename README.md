@@ -1,7 +1,8 @@
 # Proyecto ETS 1ero DAW
 
+<img src="img/Logo.png">
 
-
+<div align="justify">
 Nuestro proyecto se va a basar en una aplicación que cumple con el objetivo de prestar un tipo de información al usuario donde le muestra un análisis de los productos más baratos supermercado o punto de venta dentro de un ratio de 50km, además contará con ofertas diarias de ciertos productos que solo serán canjeables desde la aplicación.
 
 ## Uso principal
@@ -31,3 +32,4 @@ La aplicación será totalmente gratis para hacer búsquedas de los productos m�
 Se tendrá que unir a la membresía de usuarios si se quiere acceder al sistema de puntos y ofertas.
 
 El precio para acceder a las funciones de un usuario premium tendrá un coste de 4,99€/mes. Contaremos planes anuales que tomará un precio de 51,99€/año
+</div>
