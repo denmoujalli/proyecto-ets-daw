@@ -1,23 +1,20 @@
 # Proyecto ETS 1ero DAW
 
 <div align="justify">
+  
+[<img src="./img/descripcion.png">](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Descripción)
+ 
+↑ Aquí encontrarás toda la descripción del funcionamiento de la aplicación ↑
 
-## Descripción de la aplicación.
+[<img src="./img/casos-uso.png">](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Casos-de-Uso)
 
-Aquí encontrarás toda la descripción del funcionamiento de la aplicación.
+↑ Esquema de representación de las funciones principales de la aplicación con las que pueden interactuar los usuarios.↑
 
-- ![Descripción](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Descripción)
+[<img src="./img/clases.png">](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Clases)
 
-## Diagrama de Casos de Uso.
+↑ Representación del comportamiento interno de la aplicación ↑
+  
+[<img src="./img/manual-usuario.png">]()
 
-Esquema de representación de las funciones principales de la aplicación con las que pueden interactuar los usuarios.
-
-- ![Casos de Uso](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Casos-de-Uso)
-
-## Diagrama de Clases
-
-Representación del comportamiento interno de la aplicación.
-
-- ![Diagrama de Clases](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Clases)
-
+↑ Información sobre como usar la aplicación ↑
 </div>
