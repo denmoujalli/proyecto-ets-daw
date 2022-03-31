@@ -2,19 +2,17 @@
 
 <div align="justify">
   
-[<img src="./img/descripcion.svg" width=40%>](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Descripción)
- 
-↑ Aquí encontrarás toda la descripción del funcionamiento de la aplicación ↑
-
-[<img src="./img/casos-uso.svg" width=40%>](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Casos-de-Uso)
-
-↑ Esquema de representación de las funciones principales de la aplicación con las que pueden interactuar los usuarios.↑
-
-[<img src="./img/clases.svg" width=40%>](https://github.com/denmoujalli/proyecto-ets-daw/wiki/Diagrama-de-Clases)
-
-↑ Representación del comportamiento interno de la aplicación ↑
+Repositorio dedicado a la aplicación Price Tracker, proyecto realizado en el ciclo Desarrollo de Aplicaciones Web (DAW).
   
-[<img src="./img/manual-usuario.svg" width=40%>]()
+Price Tracker nace con la idea de proporcionar ayuda a cualquier persona que necesite una forma rápida de encontrar productos a los precios más competitivos y acceder a las mejores ofertas.
+  
+Para más información:
 
-↑ Información sobre como usar la aplicación ↑
+https://github.com/denmoujalli/proyecto-ets-daw/wiki
+  
+## Autores
+* Kevin Ruiz Díaz https://github.com/KevinRuiz11
+  
+* Denisse Moujalli Totesaut https://github.com/denmoujalli
+    
 </div>
