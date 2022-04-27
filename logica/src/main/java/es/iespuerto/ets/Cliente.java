@@ -2,12 +2,13 @@ package es.iespuerto.ets;
 
 /**
  * Clase para almacenar los clientes
- * @see BuscarProducto. 
+ * 
+ * @see BuscarProducto.
  * @author Denisse y Kevin
  */
 
 public class Cliente {
-    
+
     private String nombre;
     private String apellido;
     private String correo;
@@ -16,10 +17,11 @@ public class Cliente {
 
     /**
      * Constructor de la clase Cliente.
-     * @param nombre nombre del cliente.
+     * 
+     * @param nombre   nombre del cliente.
      * @param apellido apellido del cliente.
-     * @param correo correo electrónico del cliente.
-     * @param login login del cliente.
+     * @param correo   correo electrónico del cliente.
+     * @param login    login del cliente.
      * @param password contrasenia del cliente.
      */
     public Cliente(String nombre, String apellido, String correo, String login, String password) {
@@ -32,6 +34,7 @@ public class Cliente {
 
     /**
      * Método para obtener el nombre del cliente.
+     * 
      * @return nombre del cliente.
      */
     public String getNombre() {
@@ -40,6 +43,7 @@ public class Cliente {
 
     /**
      * Método para establecer el nombre del cliente.
+     * 
      * @param nombre nombre del cliente.
      */
     public void setNombre(String nombre) {
@@ -48,6 +52,7 @@ public class Cliente {
 
     /**
      * Métopdo para obtener el apellido del cliente.
+     * 
      * @return apellido del cliente.
      */
     public String getApellido() {
@@ -56,6 +61,7 @@ public class Cliente {
 
     /**
      * Método para establecer el apellido del cliente.
+     * 
      * @param apellido apellido del cliente.
      */
     public void setApellido(String apellido) {
@@ -64,6 +70,7 @@ public class Cliente {
 
     /**
      * Método para obtener el correo electrónico del cliente.
+     * 
      * @return correo electrónico del cliente.
      */
     public String getCorreo() {
@@ -72,6 +79,7 @@ public class Cliente {
 
     /**
      * Método para establecer el co9rreo electrónico del cliente.
+     * 
      * @param correo correo electrónico del cliente.
      */
     public void setCorreo(String correo) {
@@ -80,6 +88,7 @@ public class Cliente {
 
     /**
      * Método para obtener el login del cliente.
+     * 
      * @return login del cliente.
      */
     public String getLogin() {
@@ -88,6 +97,7 @@ public class Cliente {
 
     /**
      * Método para establecer el login del cliente.
+     * 
      * @param login login del cliente.
      */
     public void setLogin(String login) {
@@ -96,6 +106,7 @@ public class Cliente {
 
     /**
      * Método para obtener la contraseña del cliente.
+     * 
      * @return contraseña del cliente.
      */
     public String getPassword() {
@@ -104,11 +115,11 @@ public class Cliente {
 
     /**
      * Método para establecer la contraseña del cliente.
+     * 
      * @param password contraseña del cliente.
      */
     public void setPassword(String password) {
         this.password = password;
     }
 
-    
 }
