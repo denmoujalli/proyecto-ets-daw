@@ -1,0 +1,10 @@
+Papel de aluminio;1;0.42
+Flor jardín;2;6.24
+Ginebra;3;5.70
+Levadura;4;4.54
+Vino Blanco;5;8.50
+Alubias;6;5.76
+Maleta;7;8.11
+Servilletas;8;4.33
+Vaso tubo;9;2.58
+Queso;10;1.87
