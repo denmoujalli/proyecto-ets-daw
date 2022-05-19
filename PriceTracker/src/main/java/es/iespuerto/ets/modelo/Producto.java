@@ -11,7 +11,13 @@ public class Producto {
     private int cod;
     private double precio;
 
-
+    /**
+     * Constructor de la clase Producto.
+     * 
+     * @param nombre Nombre del producto.
+     * @param cod    Codigo del producto.
+     * @param precio Precio del producto.
+     */
     public Producto(String nombre, int cod, double precio) {
         this.nombre = nombre;
         this.cod = cod;

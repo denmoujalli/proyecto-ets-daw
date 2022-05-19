@@ -2,10 +2,8 @@ package es.iespuerto.ets.controlador;
 
 import es.iespuerto.ets.modelo.Centro;
 import es.iespuerto.ets.modelo.Producto;
-
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
-
 import static es.iespuerto.ets.utils.Utilidades.leerCentro;
 import static es.iespuerto.ets.utils.Utilidades.leerProductos;
 
@@ -17,6 +15,12 @@ import static es.iespuerto.ets.utils.Utilidades.leerProductos;
 
 public class Localizar {
 
+    /**
+     * Contructor privado, al ser clase de utilidades con metodos estaticos, no se
+     * permite instanciar objetos.
+     */
+    private Localizar() {
+    }
 
     /**
      * Toma como parametro un codigo y devuelve el producto con ese codigo.
@@ -32,7 +36,6 @@ public class Localizar {
         }
         return null;
     }
-
 
     /**
      * Toma como parametro un CIF y devuelve la ubicacion del centro con ese CIF.

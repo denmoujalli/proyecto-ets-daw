@@ -4,8 +4,6 @@ import es.iespuerto.ets.modelo.Centro;
 import es.iespuerto.ets.modelo.Cliente;
 import es.iespuerto.ets.modelo.Premium;
 import es.iespuerto.ets.modelo.Producto;
-import jdk.jshell.execution.Util;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
@@ -19,9 +17,18 @@ import java.util.Scanner;
 public class Utilidades {
 
     /**
-     * Esta funcion lee el archivo "ficheroClientes" y devuelve una lista de clientes.
+     * Contructor privado, al ser clase de utilidades con metodos estaticos, no se
+     * permite instanciar objetos.
+     */
+    private Utilidades() {
+    }
+
+    /**
+     * Esta funcion lee el archivo "ficheroClientes" y devuelve una lista de
+     * clientes.
      *
-     * @param ficheroClientes El nombre del archivo que contiene los datos de los clientes.
+     * @param ficheroClientes El nombre del archivo que contiene los datos de los
+     *                        clientes.
      * @return Una lista de clientes.
      * @throws URISyntaxException    Exception por la URL mal formada
      * @throws FileNotFoundException Exception por no encontrar fichero
@@ -52,14 +59,17 @@ public class Utilidades {
     }
 
     /**
-     * Esta funcion lee el archivo "ficheroProductos" y devuelve una lista de producto.
+     * Esta funcion lee el archivo "ficheroProductos" y devuelve una lista de
+     * producto.
      *
-     * @param ficheroProductos El nombre del archivo que contiene los datos de los producto.
+     * @param ficheroProductos El nombre del archivo que contiene los datos de los
+     *                         producto.
      * @return Una lista de producto.
      * @throws URISyntaxException    Exception por la URL mal formada
      * @throws FileNotFoundException Exception por no encontrar fichero
      */
-    public static List<Producto> leerProductos(String ficheroProductos) throws FileNotFoundException, URISyntaxException {
+    public static List<Producto> leerProductos(String ficheroProductos)
+            throws FileNotFoundException, URISyntaxException {
         List<Producto> productos;
         try (Scanner fichero = new Scanner(new File(Objects.requireNonNull(obtenerPathFichero(ficheroProductos))))) {
             productos = new ArrayList<>();
@@ -83,7 +93,8 @@ public class Utilidades {
     /**
      * Esta funcion lee el archivo "ficheroCentros" y devuelve una lista de centros.
      *
-     * @param ficheroCentros El nombre del archivo que contiene los datos de los centros.
+     * @param ficheroCentros El nombre del archivo que contiene los datos de los
+     *                       centros.
      * @return Una lista de centros.
      * @throws URISyntaxException    Exception por la URL mal formada
      * @throws FileNotFoundException Exception por no encontrar fichero
@@ -110,9 +121,11 @@ public class Utilidades {
     }
 
     /**
-     * Esta funcion lee el archivo "ficheroPremium" y devuelve una lista de clientes Premium.
+     * Esta funcion lee el archivo "ficheroPremium" y devuelve una lista de clientes
+     * Premium.
      *
-     * @param ficheroPremium El nombre del archivo que contiene los datos de los usuarios Premium.
+     * @param ficheroPremium El nombre del archivo que contiene los datos de los
+     *                       usuarios Premium.
      * @return Una lista de usuarios Premium.
      * @throws URISyntaxException    Exception por la URL mal formada
      * @throws FileNotFoundException Exception por no encontrar fichero

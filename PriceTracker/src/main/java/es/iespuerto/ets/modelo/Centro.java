@@ -1,11 +1,8 @@
 package es.iespuerto.ets.modelo;
 
-import es.iespuerto.ets.controlador.Localizar;
-
+import static es.iespuerto.ets.controlador.Localizar.producto;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
-
-import static es.iespuerto.ets.controlador.Localizar.producto;
 
 /**
  * Clase para almacenar los centros.

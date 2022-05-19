@@ -1,11 +1,9 @@
 package es.iespuerto.ets.utils;
 
-import es.iespuerto.ets.modelo.Premium;
 import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
-import java.util.List;
 import java.util.Objects;
 import static es.iespuerto.ets.utils.Utilidades.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -30,7 +28,6 @@ class UtilidadesTest {
 
     @Test
     void leerPremiumTest() throws FileNotFoundException, URISyntaxException {
-        List<Premium> premium = leerPremium("Premium.txt");
         assertEquals(10, leerPremium("Premium.txt").size(), "El fichero no se ha leído correctamente.");
     }
 

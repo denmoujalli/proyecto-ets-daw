@@ -1,11 +1,10 @@
 package es.iespuerto.ets.modelo;
 
-import es.iespuerto.ets.controlador.Localizar;
 import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CentroTest {
 
@@ -18,7 +17,6 @@ class CentroTest {
     @Test
     void publicarTestFalse() throws FileNotFoundException, URISyntaxException {
         Centro orbotech = new Centro("Orbotech Ltd", "13-200", "3197 Moulton Terrace");
-        Localizar producto = new Localizar();
         assertFalse(orbotech.publicar("Queso", 10, 1.87),
                 "El producto se ha publicado correctamente.");
     }
