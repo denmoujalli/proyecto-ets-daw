@@ -4,6 +4,7 @@ import es.iespuerto.ets.modelo.Centro;
 import es.iespuerto.ets.modelo.Cliente;
 import es.iespuerto.ets.modelo.Premium;
 import es.iespuerto.ets.modelo.Producto;
+import jdk.jshell.execution.Util;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,6 +13,7 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Utilidades {
@@ -21,12 +23,12 @@ public class Utilidades {
      *
      * @param ficheroClientes El nombre del archivo que contiene los datos de los clientes.
      * @return Una lista de clientes.
-     * @throws URISyntaxException Exception por la URL mal formada
-     * @throws  FileNotFoundException Exception por no encontrar fichero
+     * @throws URISyntaxException    Exception por la URL mal formada
+     * @throws FileNotFoundException Exception por no encontrar fichero
      */
-    public List<Cliente> leerCliente(String ficheroClientes) throws FileNotFoundException, URISyntaxException {
+    public static List<Cliente> leerCliente(String ficheroClientes) throws FileNotFoundException, URISyntaxException {
         List<Cliente> clientes;
-        try (Scanner fichero = new Scanner(new File(obtenerPathFichero(ficheroClientes)))) {
+        try (Scanner fichero = new Scanner(new File(Objects.requireNonNull(obtenerPathFichero(ficheroClientes))))) {
             clientes = new ArrayList<>();
             String linea;
             String[] lineaDatos;
@@ -54,12 +56,12 @@ public class Utilidades {
      *
      * @param ficheroProductos El nombre del archivo que contiene los datos de los producto.
      * @return Una lista de producto.
-     * @throws URISyntaxException Exception por la URL mal formada
-     * @throws  FileNotFoundException Exception por no encontrar fichero
+     * @throws URISyntaxException    Exception por la URL mal formada
+     * @throws FileNotFoundException Exception por no encontrar fichero
      */
-    public List<Producto> leerProductos(String ficheroProductos) throws FileNotFoundException, URISyntaxException {
+    public static List<Producto> leerProductos(String ficheroProductos) throws FileNotFoundException, URISyntaxException {
         List<Producto> productos;
-        try (Scanner fichero = new Scanner(new File(obtenerPathFichero(ficheroProductos)))) {
+        try (Scanner fichero = new Scanner(new File(Objects.requireNonNull(obtenerPathFichero(ficheroProductos))))) {
             productos = new ArrayList<>();
             String linea;
             String[] lineaDatos;
@@ -83,12 +85,12 @@ public class Utilidades {
      *
      * @param ficheroCentros El nombre del archivo que contiene los datos de los centros.
      * @return Una lista de centros.
-     * @throws URISyntaxException Exception por la URL mal formada
-     * @throws  FileNotFoundException Exception por no encontrar fichero
+     * @throws URISyntaxException    Exception por la URL mal formada
+     * @throws FileNotFoundException Exception por no encontrar fichero
      */
-    public List<Centro> leerCentro(String ficheroCentros) throws FileNotFoundException, URISyntaxException {
-        ArrayList<Centro> centros;
-        try (Scanner fichero = new Scanner(new File(obtenerPathFichero(ficheroCentros)))) {
+    public static List<Centro> leerCentro(String ficheroCentros) throws FileNotFoundException, URISyntaxException {
+        List<Centro> centros;
+        try (Scanner fichero = new Scanner(new File(Objects.requireNonNull(obtenerPathFichero(ficheroCentros))))) {
             centros = new ArrayList<>();
             String linea;
             String[] lineaDatos;
@@ -112,12 +114,12 @@ public class Utilidades {
      *
      * @param ficheroPremium El nombre del archivo que contiene los datos de los usuarios Premium.
      * @return Una lista de usuarios Premium.
-     * @throws URISyntaxException Exception por la URL mal formada
-     * @throws  FileNotFoundException Exception por no encontrar fichero
+     * @throws URISyntaxException    Exception por la URL mal formada
+     * @throws FileNotFoundException Exception por no encontrar fichero
      */
-    public List<Premium> leerPremium(String ficheroPremium) throws FileNotFoundException, URISyntaxException {
-        ArrayList<Premium> clientesPremium;
-        try (Scanner fichero = new Scanner(new File(obtenerPathFichero(ficheroPremium)))) {
+    public static List<Premium> leerPremium(String ficheroPremium) throws FileNotFoundException, URISyntaxException {
+        List<Premium> clientesPremium;
+        try (Scanner fichero = new Scanner(new File(Objects.requireNonNull(obtenerPathFichero(ficheroPremium))))) {
             clientesPremium = new ArrayList<>();
             String linea;
             String[] lineaDatos;
@@ -151,8 +153,8 @@ public class Utilidades {
      * @return Path completo del fichero
      * @throws URISyntaxException Exception por la URL mal formada
      */
-    public String obtenerPathFichero(String nombreFichero) throws URISyntaxException {
-        URL res = getClass().getClassLoader().getResource(nombreFichero);
+    public static String obtenerPathFichero(String nombreFichero) throws URISyntaxException {
+        URL res = Utilidades.class.getClassLoader().getResource(nombreFichero);
         if (res == null) {
             return null;
         }

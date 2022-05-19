@@ -2,10 +2,12 @@ package es.iespuerto.ets.controlador;
 
 import es.iespuerto.ets.modelo.Centro;
 import es.iespuerto.ets.modelo.Producto;
-import es.iespuerto.ets.utils.Utilidades;
 
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
+
+import static es.iespuerto.ets.utils.Utilidades.leerCentro;
+import static es.iespuerto.ets.utils.Utilidades.leerProductos;
 
 /**
  * Clase para buscar producto dentro de la aplicación.
@@ -22,9 +24,8 @@ public class Localizar {
      * @param cod El codigo del producto a buscar.
      * @return El producto que tiene el mismo codigo que el que se producto.
      */
-    public Producto producto(int cod) throws FileNotFoundException, URISyntaxException {
-        Utilidades utilidades = new Utilidades();
-        for (Producto producto : utilidades.leerProductos("Productos.txt")) {
+    public static Producto producto(int cod) throws FileNotFoundException, URISyntaxException {
+        for (Producto producto : leerProductos("Productos.txt")) {
             if (producto.getCod() == cod) {
                 return producto;
             }
@@ -39,9 +40,8 @@ public class Localizar {
      * @param cif El CIF del centro que quieres encontrar.
      * @return La ubicacion del centro.
      */
-    public String centro(String cif) throws FileNotFoundException, URISyntaxException {
-        Utilidades utilidades = new Utilidades();
-        for (Centro centro : utilidades.leerCentro("Centros.txt")) {
+    public static String centro(String cif) throws FileNotFoundException, URISyntaxException {
+        for (Centro centro : leerCentro("Centros.txt")) {
             if (centro.getCif().equals(cif)) {
                 return centro.getLocalizacion();
             }

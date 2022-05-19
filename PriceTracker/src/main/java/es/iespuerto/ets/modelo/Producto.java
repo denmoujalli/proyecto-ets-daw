@@ -24,7 +24,7 @@ public class Producto {
 
     @Override
     public boolean equals(Object producto) {
-        if (producto == null) {
+        if (producto == null || producto.getClass() != Producto.class) {
             return false;
         }
         return nombre.equals(((Producto) producto).nombre) &&

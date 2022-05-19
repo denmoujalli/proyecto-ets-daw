@@ -24,8 +24,8 @@
     <url>${web}</url>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.8.2</junit.version>
         <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
@@ -34,10 +34,10 @@
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <maven-javadoc-plugin.version>3.0.4</maven-javadoc-plugin.version>
-        <jacoco.unit-tests.limit.instruction-ratio>0%</jacoco.unit-tests.limit.instruction-ratio>
-        <jacoco.unit-tests.limit.branch-ratio>0%</jacoco.unit-tests.limit.branch-ratio>
-        <jacoco.unit-tests.limit.class-complexity>70</jacoco.unit-tests.limit.class-complexity>
-        <jacoco.unit-tests.limit.method-complexity>30</jacoco.unit-tests.limit.method-complexity>
+        <jacoco.unit-tests.limit.instruction-ratio>70%</jacoco.unit-tests.limit.instruction-ratio>
+        <jacoco.unit-tests.limit.branch-ratio>70%</jacoco.unit-tests.limit.branch-ratio>
+        <jacoco.unit-tests.limit.class-complexity>20</jacoco.unit-tests.limit.class-complexity>
+        <jacoco.unit-tests.limit.method-complexity>5</jacoco.unit-tests.limit.method-complexity>
         <web>www.github.com/denmoujalli</web>
     </properties>
     <dependencies>

@@ -5,6 +5,8 @@ import es.iespuerto.ets.controlador.Localizar;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 
+import static es.iespuerto.ets.controlador.Localizar.producto;
+
 /**
  * Clase para almacenar los centros.
  *
@@ -42,8 +44,7 @@ public class Centro {
      * @throws FileNotFoundException Exception por no encontrar fichero
      */
     public boolean publicar(String nombreProducto, int codigo, double precio) throws FileNotFoundException, URISyntaxException {
-        Localizar producto = new Localizar();
-        if (producto.producto(codigo) == null) {
+        if (producto(codigo) == null) {
             new Producto(nombreProducto, codigo, precio);
             return true;
         } else {
